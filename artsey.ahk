@@ -1,16 +1,34 @@
-﻿; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
-;                                                           ;
-;          ARTSEY layout for Autohotkey (ver 0.1)           ;
-;                                                           ;
-; Copyright (C) 2024 Dmitry I. Sokolov                      ;
-;                                                           ;
-; Artsey laoyout version 0.9                                ;
-; Autohotkey version 1.1                                    ;
-;                                                           ;
-; Lear more about ARTSEY on https://artsey.io/              ;
-; Download AutoHotkey on https://www.autohotkey.com/        ;
-;                                                           ;
-; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
+﻿; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
+;                                                                       ;
+;                ARTSEY layout for Autohotkey (ver 0.1)                 ;
+;                                                                       ;
+; Copyright (C) 2024 Dmitry I. Sokolov                                  ;
+;                                                                       ;
+; This program is free software: you can redistribute it and/or modify  ;
+; it under the terms of the GNU General Public License as published by  ;
+; the Free Software Foundation, either version 3 of the License, or     ;
+; (at your option) any later version.                                   ;
+;                                                                       ;
+; This program is distributed in the hope that it will be useful,       ;
+; but WITHOUT ANY WARRANTY; without even the implied warranty of        ;
+; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         ;
+; GNU General Public License for more details.                          ;
+;                                                                       ;
+; You should have received a copy of the GNU General Public License     ;
+; along with this program.  If not, see <http://www.gnu.org/licenses/>. ;
+;                                                                       ;
+; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
+
+; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
+;                                                                       ;
+; Artsey laoyout version 0.9                                            ;
+; Autohotkey version 1.1                                                ;
+;                                                                       ;
+; See README.md and LICENSE for more info                               ;
+; Lear more about ARTSEY on https://artsey.io/                          ;
+; Download AutoHotkey on https://www.autohotkey.com/                    ;
+;                                                                       ;
+; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ; ;
 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
@@ -58,6 +76,26 @@ Map_Keys[Const_Key_R + Const_Key_T + Const_Key_S] := "{x}"
 Map_Keys[Const_Key_E + Const_Key_Y + Const_Key_I] := "{l}"
 Map_Keys[Const_Key_A + Const_Key_R + Const_Key_T + Const_Key_S] := "{z}"
 
+Map_Keys[Const_Key_A + Const_Key_Y] := "{,}"
+Map_Keys[Const_Key_R + Const_Key_Y] := "{'}"
+Map_Keys[Const_Key_A + Const_Key_I] := "{.}"
+Map_Keys[Const_Key_T + Const_Key_I] := "{!}"
+Map_Keys[Const_Key_A + Const_Key_O] := "{/}"
+Map_Keys[Const_Key_S + Const_Key_O] := "{?}"
+
+Map_Keys[Const_Key_E + Const_Key_Y + Const_Key_I + Const_Key_O] := "{Space}"
+Map_Keys[Const_Key_A + Const_Key_E] := "{Enter}"
+Map_Keys[Const_Key_E + Const_Key_R] := "{BS}"
+Map_Keys[Const_Key_A + Const_Key_R + Const_Key_O] := "{Esc}"
+Map_Keys[Const_Key_R + Const_Key_I] := "{Del}"
+Map_Keys[Const_Key_A + Const_Key_R + Const_Key_T + Const_Key_O] := "{Tab}"
+
+Map_Keys[Const_Key_E + Const_Key_S] := "{Ctrl}" ; TODO hold and release
+Map_Keys[Const_Key_A + Const_Key_Y + Const_Key_I + Const_Key_O] := "{Shift}" ; TODO hold and release
+; Map_Keys[Const_Key_S + Const_Key_Y] := ; TODO GUI what is it?
+Map_Keys[Const_Key_E + Const_Key_R + Const_Key_T + Const_Key_S] := "{Shift}"
+Map_Keys[Const_Key_S + Const_Key_I] := "{Alt}" ; TODO hold and release
+; Map_Keys[Const_Key_A + Const_Key_R + Const_Key_T + Const_Key_S + Const_Key_E + Const_Key_Y + Const_Key_I + Const_Key_O] := ; TODO CLEAR what is it?
 
 Key_Down_Mask := Const_Key_None
 Key_Up_Mask := Const_Key_None
